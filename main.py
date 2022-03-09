@@ -4,7 +4,7 @@ import requests
 import folium
 import telebot
 
-bot = telebot.TeleBot('secret')
+bot = telebot.TeleBot('sicret')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
@@ -46,7 +46,6 @@ def getInfoIP(message):
 #     while True:
 #         message = input()
 #         start_message(message)
-
 
 bot.polling(none_stop=True, interval=0)
 
